@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="VentasModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'Ventas.dbo.View_1' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="View_1">
+    <Key>
+      <PropertyRef Name="id_producto" />
+      <PropertyRef Name="nombre_producto" />
+      <PropertyRef Name="descripcion_producto" />
+      <PropertyRef Name="nombre_proveedor" />
+    </Key>
+    <Property Name="id_producto" Type="int" Nullable="false" />
+    <Property Name="nombre_producto" Type="nchar" MaxLength="50" Nullable="false" />
+    <Property Name="descripcion_producto" Type="nchar" MaxLength="50" Nullable="false" />
+    <Property Name="nombre_proveedor" Type="nchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="VentasModelStoreContainer">
+    <EntitySet Name="View_1" EntityType="Self.View_1" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [View_1].[id_producto] AS [id_producto], 
+    [View_1].[nombre_producto] AS [nombre_producto], 
+    [View_1].[descripcion_producto] AS [descripcion_producto], 
+    [View_1].[nombre_proveedor] AS [nombre_proveedor]
+    FROM [dbo].[View_1] AS [View_1]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

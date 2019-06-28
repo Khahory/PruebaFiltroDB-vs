@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="VentasModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="View_1">
+    <Key>
+      <PropertyRef Name="id_producto" />
+      <PropertyRef Name="nombre_producto" />
+      <PropertyRef Name="descripcion_producto" />
+      <PropertyRef Name="nombre_proveedor" />
+    </Key>
+    <Property Name="id_producto" Type="Int32" Nullable="false" />
+    <Property Name="nombre_producto" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="descripcion_producto" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="nombre_proveedor" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="VentasEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="View_1" EntityType="Self.View_1" />
+  </EntityContainer>
+</Schema>

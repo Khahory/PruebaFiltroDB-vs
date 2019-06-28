@@ -1,0 +1,12 @@
+C:\Users\Angel\Documents\Proyectos VS\PruebaFiltroDB\DatosLibreria\bin\Debug\DatosLibreria.dll.config
+C:\Users\Angel\Documents\Proyectos VS\PruebaFiltroDB\DatosLibreria\bin\Debug\DatosLibreria.dll
+C:\Users\Angel\Documents\Proyectos VS\PruebaFiltroDB\DatosLibreria\bin\Debug\DatosLibreria.pdb
+C:\Users\Angel\Documents\Proyectos VS\PruebaFiltroDB\DatosLibreria\bin\Debug\EntityFramework.dll
+C:\Users\Angel\Documents\Proyectos VS\PruebaFiltroDB\DatosLibreria\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Angel\Documents\Proyectos VS\PruebaFiltroDB\DatosLibreria\bin\Debug\EntityFramework.xml
+C:\Users\Angel\Documents\Proyectos VS\PruebaFiltroDB\DatosLibreria\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Angel\Documents\Proyectos VS\PruebaFiltroDB\DatosLibreria\obj\Debug\DatosLibreria.csprojAssemblyReference.cache
+C:\Users\Angel\Documents\Proyectos VS\PruebaFiltroDB\DatosLibreria\obj\Debug\DatosLibreria.csproj.CoreCompileInputs.cache
+C:\Users\Angel\Documents\Proyectos VS\PruebaFiltroDB\DatosLibreria\obj\Debug\DatosLibreria.csproj.CopyComplete
+C:\Users\Angel\Documents\Proyectos VS\PruebaFiltroDB\DatosLibreria\obj\Debug\DatosLibreria.dll
+C:\Users\Angel\Documents\Proyectos VS\PruebaFiltroDB\DatosLibreria\obj\Debug\DatosLibreria.pdb

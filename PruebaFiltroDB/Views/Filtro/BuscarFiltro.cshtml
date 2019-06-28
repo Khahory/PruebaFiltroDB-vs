@@ -1,0 +1,67 @@
+﻿@model IEnumerable<DatosLibreria.View_1>
+
+@{
+    ViewBag.Title = "BuscarFiltro";
+}
+
+<h2>BuscarFiltro</h2>
+
+<p>
+
+    @Html.ActionLink("Create New", "Create")
+    @using (Html.BeginForm("BuscarFiltro", "Filtro", FormMethod.Get))
+    {
+        <text>
+        Busqueda por nombres: @Html.TextBox("nombre_proveedor") <br />
+        <input type="submit" name="" value="Buscar" />
+
+        Nombre de los productos: @Html.DropDownList("id_producto", String.Empty)
+        </text>
+     }
+</p>
+
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(Model => Model.nombre_proveedor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(Model => Model.nombre_producto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(Model => Model.descripcion_producto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(Model => Model.id_producto)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @item.nombre_proveedor
+                </td>
+
+                <td>
+                    @item.nombre_producto
+                </td>
+
+                <td>
+                    @item.descripcion_producto
+                </td>
+
+                <td>
+                    @item.id_producto
+                </td>
+
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                </td>
+            </tr>
+        }
+
+    </table>
